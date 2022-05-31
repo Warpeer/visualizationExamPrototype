@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagemapster/1.5.4/jquery.imagemapster.min.js"></script>
+</head>
+
+<body>
+    <div id="popup-main">
+        <div id="popup">
+            <div id="back-button-container">
+                <a href="javascript:hidePopup()" class="previous round">&#10229;</a>
+            </div>
+            <img src="img/house1/house1template.png" id="floorImage">
+            <div id="slider-container">
+                <input id="zoomer" class="slider" type="range" orient="vertical" step="1">
+                <h1 id="floor-count">Floor: 1</h1>
+            </div>
+        </div>
+    </div>
+    <header id="navbar">
+        <div id="navbar-bg-image">
+
+        </div>
+        <div id="navbar-content">
+            <div id="navbar-logo">
+                <h2>s364702</h2>
+            </div>
+            <div id="navbar-name">
+                <h1>Visualization Exam Website</h1>
+            </div>
+        </div>
+    </header>
+    <div id="content-container">
+        <img src="img/map.PNG" alt="map" id="map-image" usemap="#map-map">
+        <map name="map-map">
+            <area target="" alt="house1" title="Åsaveien 71" href="#" coords="440,360,499,454,456,476,425,428,385,452,362,412" shape="poly">
+            <area target="" alt="house2" title="Åsaveien 72" href="#" coords="499,453,551,537,503,562,452,481" shape="poly">
+        </map>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
